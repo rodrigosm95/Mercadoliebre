@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    background-color: #d3d2d2;
+    font-style: 12px;
+}
+.header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+.header-topbar{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.search-bar{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.copy-header{
+    text-align: center;
+}
+
+.burger-menu{
+    display: block;
+    margin: auto;
+    color: white;
+    background-color: blue;
+    border-width: 0px;
+    border-radius: 5px;
+    font-size: 25px;
+    margin-bottom: 1em;
+}
+.header-navbar{
+    display: none;
+}
+
+.header-navbar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-navbar a{
+    text-decoration: none;
+    color: black;
+}
+.banner img{
+    width: 100%;
+}
+.img-productos{
+    width: 100%;
+    height: auto;
+}
+.titles-section{
+    font-size: 24px;
+}
+main{
+    margin: auto;
+    width: 90%;
+    font-size: 12px;
+}
+main section article i{
+    padding: 10px;
+    color: green;
+    border-radius: 100%;
+    border: solid 1px green;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+
+main section article{
+    margin-bottom: 10px;
+    background-color: white;
+}
+.caja_descripcion{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+.precios{
+    font-size: 18px;
+}
+.descuentos{
+    font-size: 16px;
+    color: green;
+}
+.descripcion{
+    font-size: 16px;
+    display: none;
+}
+
+.footer i{
+    color: blue;
+    margin: auto;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+footer{
+    text-align: center;
+}
+.descuentos{
+    width: 70%;
+    margin-left: 5px;
+}
+.form-login {
+    padding: 20px 15px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #EAC926;
+    height: 200px;
+}
+.login-buttons{
+    margin-bottom: 5px;
+}
+.login-buttons label{
+    display: block;
+}
+
+.form-register{
+    padding: 20px 15px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #EAC926;
+    height: 200px;
+}
+.register-buttons{
+    margin-bottom: 5px;
+}
+.register-buttons label{
+    display: block;
+}
+
+
+
+
+@media(min-width: 361px){
+    .header-topbar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .header-navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        }
+    .header-navbar ul{
+        display: flex;
+    }
+    .header-navbar ul li{
+        padding: 5px;
+    }
+    .burger-menu{
+    display: none;
+    }
+    .img-productos{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }   
+    .descripcion{
+        font-size: 16px;
+    }
+
+    .caja_descripcion{
+        border-top: solid 1px #ebebeb;
+        padding: 15px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    } 
+    div.productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .productos article{
+        width: 45%;
+    }
+    .form-login {
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;
+        background-color: #EAC926;
+        height: 200px;
+    }
+    .login-buttons{
+        margin-bottom: 5px;
+    }
+    .form-register {
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;
+        background-color: #EAC926;
+        height: auto;
+    }
+    .register-buttons{
+        margin-bottom: 5px;
+    }
+}
+
+@media(min-width: 769px){
+    .copy-header{
+        max-width: 250px;
+        margin: auto;
+    }
+    .header-topbar{
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        flex-wrap: nowrap;
+    }
+    .header-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .productos article{
+        width: 22%;
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .box-footer{
+        width: 30%;
+    }
+    .footer p{
+        margin-top: 15px;
+    }
+}

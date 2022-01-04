@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-topbar">
+            <div class= "logo">
+                <a href="/">
+                <img src="/images/logo-mercado-liebre.svg" alt="insertando archivo svg">
+                </a>
+            </div>
+            <div class="search-bar">
+                <div class="search-bar">
+                    <form action="" method="get"></form>
+                    <input type="text" placeholder="Buscar productos, marca...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+                <h2 class="copy-header">
+                    <i class="fas fa-hand-holding-usd">
+                    Compra en cuotas y sin tarjetas de creditos</i>
+                </h2>
+            </div>
+        </div>
+        <nav class="header-navbar">
+            <ul class="left-navbar">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul class= "right-navbar">
+                <li><a href="/register">Crea tu cuenta<i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <button class="burger-menu">
+            <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <form action="" method="post" class="form-register">
+        <div class="register-buttons">
+            <label>Nombre y Apellido</label>
+            <input type="text" name="name">
+        </div>
+        <div class="register-buttons">
+            <label>Nombre de usuario</label>
+            <input type="text" name="username">
+        </div>
+        <div class="register-buttons">
+            <label>Fecha de nacimiento</label>
+            <input type="date" name="birthday">
+        </div>
+        <div class="register-buttons">
+            <label>Domicilio</label>
+            <input type="text" name="adress">
+        </div>
+        <div class="register-buttons">
+            <label>Desan:</label>
+            <input type="radio" value="comprar" name="user-porfile"> Comprar
+            <input type="radio" value="vender" name="user-porfile"> Vender
+        </div>
+        <div class="register-buttons">
+            <label>Intereses</label>
+            <input type="checkbox" name="user-interest"> Electro
+            <input type="checkbox" name="user-interest"> Moda
+            <input type="checkbox" name="user-interest"> Hogar
+            <input type="checkbox" name="user-interest"> Jugueteria
+            <input type="checkbox" name="user-interest"> Vida sana
+        </div>
+        <div class="register-buttons">
+            <label>Foto del usuario</label>
+        </div>
+        <div class="register-buttons">
+            <label>Contraseña</label>
+            <input type="text" name="password">
+        </div>
+        <div class="register-buttons">
+            <label>Confirmar Contraseña</label>
+            <input type="text" name="password-confirm">
+        </div>
+        <button type="submit">ENVIAR</button>
+        <button type="reset">BORRAR</button>
+    </form>
+</body>
+</html>
