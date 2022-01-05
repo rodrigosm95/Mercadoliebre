@@ -21,12 +21,16 @@ body{
 .logo{
     width: 50%;
     margin: auto;
-    margin-bottom: 20px;
 }
 .search-bar{
     width: 50%;
     margin: auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.imput-search{
+    width: 85%;
 }
 
 .copy-header{
@@ -35,13 +39,13 @@ body{
 
 .burger-menu{
     display: block;
-    margin: auto;
+    margin: 10px auto;
     color: white;
-    background-color: blue;
+    background-color: rgb(33, 33, 134);
     border-width: 0px;
     border-radius: 5px;
-    font-size: 25px;
-    margin-bottom: 1em;
+    font-size: 20px;
+    padding: 5px;
 }
 .header-navbar{
     display: none;
@@ -121,8 +125,7 @@ footer{
     padding: 20px 15px;
     margin: auto;
     margin-top: 30px;
-    background-color: #EAC926;
-    height: 200px;
+    height: auto
 }
 .login-buttons{
     margin-bottom: 5px;
@@ -130,19 +133,24 @@ footer{
 .login-buttons label{
     display: block;
 }
+.login-buttons input{
+    width: 100%;
+}
 
 .form-register{
     padding: 20px 15px;
     margin: auto;
     margin-top: 30px;
-    background-color: #EAC926;
-    height: 200px;
+    height: auto
 }
 .register-buttons{
     margin-bottom: 5px;
 }
 .register-buttons label{
     display: block;
+}
+.register-buttons input{
+    width: 100%;
 }
 
 
@@ -162,10 +170,14 @@ footer{
         }
     .header-navbar ul{
         display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: space-evenly;
     }
     .header-navbar ul li{
         padding: 5px;
     }
+
     .burger-menu{
     display: none;
     }
@@ -196,7 +208,6 @@ footer{
         margin: auto;
         margin-top: 30px;
         background-color: #EAC926;
-        height: 200px;
     }
     .login-buttons{
         margin-bottom: 5px;
