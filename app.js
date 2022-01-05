@@ -5,9 +5,7 @@ const app = express();
 
 app.use(express.static(publicPath));
 
-app.set('port', process.env.PORT || 3000)
-
-app.listen(app.get('port'), () => console.log("levantando servidor en el puerto" + app.get('port')));
+app.listen(process.env.PORT || 3000, ()=> console.log("levantando servidor en el puerto 3000") )
 
 app.get("/", (req, res) => {
     res.sendFile(path.resolve("./views/home.html"))
